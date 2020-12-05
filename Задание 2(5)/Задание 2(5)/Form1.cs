@@ -61,8 +61,6 @@ namespace Задание_2_5_
             }
 
             label9.Text = "Запись прошла успешно";
-
-            
         }
 
 
@@ -71,7 +69,7 @@ namespace Задание_2_5_
         private void button2_Click(object sender, EventArgs e)
         {
             dataGridView1.AllowUserToAddRows = false;
-
+           
             int n, m;
 
             n = dataGridView1.Columns.Count;
@@ -90,9 +88,11 @@ namespace Задание_2_5_
 
         public void button3_Click(object sender, EventArgs e)
         {
+
             bool btn = true;
             if (btn == true)
             {
+                
 
                 String Filename = textBox1.Text;
 
@@ -138,6 +138,8 @@ namespace Задание_2_5_
                 {
                     rd.Close();
                 }
+
+                dataGridView2.AllowUserToAddRows = false;
             }
 
 
