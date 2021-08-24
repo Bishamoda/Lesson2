@@ -36,7 +36,7 @@ namespace Задание_2_5_
         {
             String Filename = textBox1.Text;
 
-            TextWriter sw = new StreamWriter(@"C:\Users\Mike\Desktop\" + Filename + ".txt");
+            TextWriter sw = new StreamWriter(@"C:\Users\Михаил\Desktop\" + Filename + ".txt");
 
 
             try
@@ -99,7 +99,7 @@ namespace Задание_2_5_
                 DataTable table = new DataTable();
 
 
-                StreamReader rd = new StreamReader(@"C:\Users\Mike\Desktop\" + Filename + ".txt");
+                StreamReader rd = new StreamReader(@"C:\Users\Михаил\Desktop\" + Filename + ".txt");
                 string[] str;
                 int num = 0;
 
@@ -149,7 +149,7 @@ namespace Задание_2_5_
         public void textBox2_TextChanged()
         {
             String Filename = textBox1.Text;
-            string m = File.ReadAllText(@"C:\Users\Mike\Desktop\" + Filename + ".txt");
+            string m = File.ReadAllText(@"C:\Users\Михаил\Desktop\" + Filename + ".txt");
             
             textBox2.Text = "№"+ " Name" + " Age" + Environment.NewLine + m;
 
